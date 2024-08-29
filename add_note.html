@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>ADD NOTE</h1>
+    </header>
+
+    <main>
+        <form id="note_form" class="note-form" action="./index.html">
+            <section class="note-header">
+                <label for="title" class="title-label">
+                    <span>Title:</span>
+                    <input id="title" type="text">
+                </label>
+                <label for="category" class="category-label">
+                    <span>Category:</span>
+                    <input id="category" type="text" name="category" list="suggestion_list">
+                    <datalist id="suggestion_list">
+                        <option value="Uncategorized">Uncategorized</option>
+                        <option value="Favourite">Favourite</option>
+                        <option value="Important">Important</option>
+                        <option value="To Do">To Do</option>
+                    </datalist>
+                </label>
+            </section>
+            <section>
+                <label for="note">
+                    <span>Note:</span>
+                    <textarea name="note" id="note"></textarea>
+                </label>
+            </section>
+            <button id="save_note_btn" class="form-btn" type="submit">Save</button>
+        </form>
+    </main>
+
+    <button class="mode-switch" onclick="switch_mode()">
+        <img src="./imgs/light_mode/mode.png" alt="mode">
+    </button>
+
+    <script src="./js/note_saver.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>

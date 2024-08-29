@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>NOTES</h1>
+    </header>
+
+    <hr>
+    <nav>
+        <button id="search_btn">
+            <img src="./imgs/light_mode/search.png" alt="search">
+        </button>
+
+        <input id="search_bar" type="text">
+
+        <select id="categories" name="categories">
+            <!--Categories to be filled by JavaScript-->
+        </select>
+    </nav>
+    <hr>
+
+    <section id="notes_list">
+        <!--Notes to be filled by JavaScript-->
+    </section>
+
+    <a href="./add_note.html" class="floating" id="add_btn">
+        <img src="./imgs/light_mode/add.png" alt="add note">
+    </a>
+    
+    <button class="mode-switch" onclick="switch_mode()">
+        <img src="./imgs/light_mode/mode.png" alt="mode">
+    </button>
+
+    <script src="./js/home.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>
